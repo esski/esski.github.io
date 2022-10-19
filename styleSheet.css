@@ -51,7 +51,7 @@
 	color: #000000; /* Black */
 	text-transform: uppercase; /* Trying different elements from the reference */
 }
-.floatRight { /* class to specify alignment to right for some navigation fields (multi-use) */
+.floatRight { /* class to specify alignment to right for some navigation fields */
 	float: right !important; /* !important needed to override other settings */ 
 }
 /* --MenuOption CSS End-- */
