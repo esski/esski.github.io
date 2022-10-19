@@ -1,0 +1,52 @@
+<!-- More page for A2 - personal webpage -->
+<!DOCTYPE html>
+<html lang="en"> <!--setting language of webpage-->
+<head>
+	<title>More</title>
+	<link rel="stylesheet" href="styleSheet.css"> <!--connecting CSS style sheet-->
+</head>
+
+<body class="box"> <!--class box applied to all elements in body-->
+
+<!--MenuOption Begin-->
+ <div class="navigation">
+	<a href="index.html">Home</a>
+	<!--More is the current active-->
+	<a class="active floatRight" href="more.html">More</a> <!--More is arranged to rightside (order matters)-->
+	<a href="about.html" class="floatRight">About</a> <!--About is arranged to rightside (order matters)-->
+</div> 
+<!--MenuOption End-->
+
+<h2>More</h2>
+<h3>The Idea</h3>
+
+<div>
+	<!--class center and quote set on p tag to make a floating quote-->
+	<p class="center" id="quote"> 
+		"Language is a process of free creation; its laws and principles are fixed, 
+		but the manner in which the principles of generation are used is free and 
+		infinitely varied. Even the interpretation and use of words involves a 
+		process of free creation." </p>
+	<p class="left">- Noam Chomsky</p>
+</div>
+
+
+<!--ImageOption Begin-->
+<!-- 1/5 Image on More page
+	- size specifies original
+	- left class applied
+	- Responsive design changes the set arrangements and sizes-->
+<div class="center">
+<img src="images/thought_map.jpg" alt="A web of thoughts exhibited on a wall" width="640" height="426" class="left">
+</div>
+<!--ImageOption End-->
+
+<!--Adding a footer: possibility of including external links-->
+<div class="footer">
+	<h5>to learn more</h5>
+	<p><a href="reference.html" class="links">References</a></p> <!--This page is a relative path-->
+	<p><a href="https://www.google.ca" class="links">Google It !</a></p> <!--This is an external link-->
+</div>
+
+</body>
+</html>
