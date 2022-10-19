@@ -25,7 +25,7 @@
 /* To add some space around the body */
 .box {
 	/* Future reference for 4 digit margin:  top right bottom left */
-	margin: 40px 5px; /* top/bottom right/left */
+	margin: 10px 5px; /* top/bottom right/left */
 	padding: 60px; 
 }
 
