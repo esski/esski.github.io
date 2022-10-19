@@ -1,18 +1,46 @@
-<!DOCTYPE html>
-<html>
-  
+<!-- Main page for A2 - personal webpage -->
+<!DOCTYPE html> 
+<html lang="en"> <!--setting language of webpage-->
 <head>
-<style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
-</style>
+	<title>Portfolio Home</title>
+	<link rel="stylesheet" href="styleSheet.css"> <!--connecting CSS style sheet-->
 </head>
-  
-<body>
 
-<h1>Heading</h1>
-<p>The paragraph.</p>
+<body class="box"> <!--class box applied to all elements in body-->
+
+<!--MenuOption Begin-->
+<!--Reference page: https://www.w3schools.com/howto/howto_js_topnav.asp 
+	Using a div instead of list, as the look I am going for is not list-like -->
+ <div class="navigation">
+	<a class="active" href="index.html">Home</a> <!--Home is the current active-->
+	<a href="morePage.html" class="floatRight">More</a> <!--More is arranged to rightside (order matters)-->
+	<a href="aboutPage.html" class="floatRight">About</a> <!--About is arranged to rightside (order matters)-->
+</div> 
+<!--MenuOption End-->
+
+<!--ImageOption Begin-->
+<!--1/5 Image on the Main page 
+	- size specifies original
+	- mainleft class applied as behaviour and size is different than other images
+	- Responsive design changes the set arrangements and sizes-->
+<img src="images/table_map_resized.jpg" alt="Photo of cartographic map on a table" width="360" height="540" class="mainleft">
+<!--ImageOption End-->
+
+<!--Text on Main page-->
+<h1>Anonymous Portfolio</h1>
+
+<div class="left"> <!--div used to group h4 and p together for behaviour-->
+	<h4>You Who</h4>
+	<p>You are who you are.</p>
+</div>
+
+<!--Adding a footer: possibility of including external links-->
+<div class="footer">
+	<h5>to learn more</h5>
+	<p><a href="referencePage.html" class="links">References</a></p> <!--This page has a relative path-->
+	<p><a href="https://www.google.ca" class="links">Google It !</a></p> <!--This is an external link-->
+</div>
+
 
 </body>
 </html>
