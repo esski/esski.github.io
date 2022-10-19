@@ -11,8 +11,8 @@
 <!--MenuOption Begin-->
  <div class="navigation">
 	<a href="index.html">Home</a>
-	<a href="more.html" class="floatRight">More</a> <!--More is arranged to rightside (order matters)-->
-	<a href="about.html" class="floatRight">About</a> <!--About is arranged to rightside (order matters)-->
+	<a href="morePage.html" class="floatRight">More</a> <!--More is arranged to rightside (order matters)-->
+	<a href="aboutPage.html" class="floatRight">About</a> <!--About is arranged to rightside (order matters)-->
 </div> 
 <!--MenuOption Begin-->
 
@@ -32,7 +32,8 @@
 		  <th>Link</th> <!--link referencing where the image was sourced from-->
 		</tr>
 		<!--Same general format for the entries following the header specifications
-			- includes external links-->
+			- includes external links
+			- reference rowspan: https://www.w3schools.com/html/html_table_colspan_rowspan.asp-->
 		<tr>
 		  <td>Home</td>
 		  <td>Background</td>
@@ -41,21 +42,18 @@
 			class="links">Visit Photo by Annie Spratt on Unsplash</a></td>
 		</tr>
 		<tr>
-		  <td>About</td>
+		  <td rowspan="3">About</td> <!--rowspan to make 3 repeated entries to 1-->
 		  <td>Top</td>
-		  <td>Dylan Leagh</td>
+		  <td rowspan="2">Dylan Leagh</td> <!--rowspan to make 2 repeated entries to 1-->
 		  <td><a href="https://unsplash.com/photos/jMweseQf5tY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" 
 			class="links">Visit Photo by Dylan Leagh on Unsplash</a></td>
 		</tr>
 		<tr>
-			<td>About</td>
 			<td>Middle</td>
-			<td>Dylan Leagh</td>
 			<td><a href="https://unsplash.com/photos/LdxEpdy7LoM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" 
 			  class="links">Visit Photo by Dylan Leagh on Unsplash</a></td>
 		</tr>
 		<tr>
-			<td>About</td>
 			<td>Bottom</td>
 			<td>Tabea Schimpf</td>
 			<td><a href="https://unsplash.com/photos/9-xfYKAI6ZI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" 
@@ -68,7 +66,7 @@
 			<td><a href="https://unsplash.com/photos/OWkXt1ikC5g?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" 
 			  class="links">Visit Photo by charlesdeluvio on Unsplash</a></td>
 		</tr>
-	  </table>
+	</table>
 </div>
 <!--TableOption End-->
 
