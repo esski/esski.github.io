@@ -1,0 +1,190 @@
+/* General Comments: 
+	-- Visual Inspiration for webpage --
+	https://www.wix.com/website-template/view/html/3146?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv&tpClick=view_button&esi=3f121d55-0736-4967-bbdc-a6b0253e32a9
+	- the navigation bar setup
+	- general aesthetic
+	- layout: bottom footer with links
+	https://www.wix.com/website-template/view/html/2516?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fpersonal%2F2&tpClick=view_button&esi=01407727-c603-45fb-9260-43f5ce60927b
+	- reference for layout of about page images
+	- layout for main page 
+	- aesthetically similar to the previous reference
+*/
+	/* Personal Reference sColours:
+		color: #6495ED; /* CornflowerBlue
+		color: #191970; /* MidnightBlue
+		color: #0000FF; /* Blue
+		color: #708090; /* SlateGray
+		color: #696969; /* DimGray 
+		color: #778899; /* LightSlateGray
+		color: #B0C4DE; /* LightSteelBlue
+		color: #F0F8FF; /* AliceBlue
+		color: #F8F8FF; /* GhostWhite
+		color: #000000; /* Black 
+	*/
+
+/* To add some space around the body */
+.box {
+	/* Future reference for 4 digit margin:  top right bottom left */
+	margin: 40px 5px; /* top/bottom right/left */
+	padding: 60px; 
+}
+
+/* --MenuOption CSS Begin-- 
+		- following from the inspirations, the overall look of the navigation 
+		bar was kept to be simple, without a separate background
+		- reference: https://www.w3schools.com/howto/howto_js_topnav.asp	*/
+/* General specifications */
+.navigation a{
+	color: #191970; /* MidnightBlue */
+	padding: 20px 5px;
+	font-size: 17px;
+	text-decoration: none;
+    float: left;
+}
+/* Change colour and appearance when hovering over */
+.navigation a:hover {
+  	color: #0000FF; /* Blue */
+  	text-transform: lowercase; /* Trying different elements from the reference */
+}
+/* Change colour and appearance of current page */
+.navigation a.active {
+	color: #000000; /* Black */
+	text-transform: uppercase; /* Trying different elements from the reference */
+}
+.floatRight { /* class to specify alignment to right for some navigation fields (multi-use) */
+	float: right !important; /* !important needed to override other settings */ 
+}
+/* --MenuOption CSS End-- */
+
+/* General Settings for all text in the body */
+body {
+	background-color: #F8F8FF; /* GhostWhite */
+	font-family: Helvetica, sans-serif; /* Several fonts should be listed for fallback */ 
+	color: #000000; /* Black */
+}
+/* Setting header specifications for use in different areas 
+		- padding is used to keep the pages looking more uniform and
+		to help keep them unaffected and separated from other items*/
+h1 { /* Home page */
+    padding-top: 150px; 
+	font-size: 8vw; /* font unit vw for responsive design */
+}
+h2 { /* Header non-Home pages */
+    padding-top: 40px; 
+	font-size: 40px;
+}
+h3 { /* Supporting Header */
+	color: #696969; /* DimGray */
+    font-size: 30px;
+}
+h4 { /* Supporting Header */
+	color: #696969; /* DimGray */
+    font-size: 25px;
+}
+h5 { /* Header for Footer*/
+	padding-top: 30px;
+    font-size: 20px;
+}
+
+/* ID to alter text for a quote (specific single use) */
+#quote {
+	color: #6495ED; /* CornflowerBlue */ 
+	font-style: italic;
+	text-align-last: right;
+	max-width: 640px; /* To fix its max width to the image below it */
+}
+/* ID to alter text for a caption (specific single use) */
+#caption {
+	color: #778899; /* LightSlateGray */
+	font-size: 12px;
+}
+/* A class to underline text of choice when wanted without changing general hX or p */
+.underline {
+	text-decoration: underline;
+}
+/* Seperate class for text to be made into the footer */
+.footer {
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+	clear: both; /* This pushes the element below floating objects */
+}
+
+/* Specifications for general link text */
+a:link { /* Specification for the link as-is */
+    text-decoration: none;
+    color: #191970; /* MidnightBlue */
+}
+a:hover { /* Specification for the link when hovering over */
+    color: #0000FF; /* Blue */
+}
+
+/* Classes for arrangment/alignment of text and images */
+.left { /* Aligning to the left */
+	padding: 10px;
+	padding-top: 25px;
+    float: left;
+	clear: right; /* Clears the right side */
+}
+.mainleft { /* Separate for Home page because of differences in ResponsiveDesign behaviour*/
+	padding: 10px;
+	padding-top: 25px;
+    float: left;
+	clear: both;
+}
+.right { /* Aligning to the right */
+    padding: 10px;
+	padding-top: 25px;
+    float: right;
+	clear: left; /* Clears the left side */
+}
+.center { /* Aligning to the center */
+	padding: 10px;
+	padding-top: 25px;
+	text-align: center;
+	clear: both; /* Clears the left and right side */
+}
+
+/* --ResponsiveOption CSS Begin--
+	- using reference: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+@media only screen and (max-width: 810px) { /* max width value accommadates for smooth change */
+	/* For mobile phones: */
+	.left, .right, .center {
+	  	width: 100%; /* Can only get smaller from original size (not bigger) - mainly images */
+	  	height: auto;
+	  	align-items: center; /* Changes alignment to center objects in single smooth line */
+	  	padding-top: 40px;
+	  	padding-left: 0px;
+	  	padding-right: 0px;
+	}
+	.mainleft { /* Size difference for the image on home page required separate class */
+		max-width: 100%;
+	  	height: auto;
+	  	padding-top: 25px;
+	  	padding: 10px;
+	}
+}
+/* Responsive design for table
+	- reference: https://www.w3schools.com/css/css_table_responsive.asp */
+.tableResponse { 
+	overflow-x: auto; /* Becomes scrollable when screen to small for fields */
+}
+/* --ResponsiveOption CSS End-- */
+
+/* --TableOption CSS Begin--
+	- reference: https://www.w3schools.com/css/css_table_style.asp */
+table {
+	caption-side: bottom; /* Specification for caption arrangement */
+}
+th, td { /* Specification for text in table */
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+	padding: 10px;
+}
+th { /* Specification for colour in table header */
+	background-color: #F0F8FF; /* AliceBlue */
+}
+td:hover { /* Specification for colour when hovering table data */
+	background-color: #F0F8FF; /* AliceBlue */
+}
+/* --TableOption CSS End-- */
