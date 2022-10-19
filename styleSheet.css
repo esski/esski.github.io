@@ -30,9 +30,9 @@
 }
 
 /* --MenuOption CSS Begin-- 
-		- following from the inspirations, the overall look of the navigation 
-		bar was kept to be simple, without a separate background
-		- reference: https://www.w3schools.com/howto/howto_js_topnav.asp	*/
+	- following from the inspirations, the overall look of the navigation 
+	bar was kept to be simple, without a separate background
+	- reference: https://www.w3schools.com/howto/howto_js_topnav.asp	*/
 /* General specifications */
 .navigation a{
 	color: #191970; /* MidnightBlue */
@@ -56,15 +56,19 @@
 }
 /* --MenuOption CSS End-- */
 
-/* General Settings for all text in the body */
+/* General Settings for body text and background */
 body {
 	background-color: #F8F8FF; /* GhostWhite */
 	font-family: Helvetica, sans-serif; /* Several fonts should be listed for fallback */ 
 	color: #000000; /* Black */
 }
+p { /* Specific elements for p to override default or general */
+	font-family: Arial, Helvetica, sans-serif;
+	color: #708090; /* SlateGray */
+}
 /* Setting header specifications for use in different areas 
-		- padding is used to keep the pages looking more uniform and
-		to help keep them unaffected and separated from other items*/
+	- padding is used to keep the pages looking more uniform and
+	to help keep them unaffected and separated from other items*/
 h1 { /* Home page */
     padding-top: 150px; 
 	font-size: 8vw; /* font unit vw for responsive design */
@@ -104,38 +108,38 @@ h5 { /* Header for Footer*/
 }
 /* Seperate class for text to be made into the footer */
 .footer {
-    padding: 5px;
-    text-align: center;
-    margin-top: 20px;
+    	padding: 5px;
+    	text-align: center;
+    	margin-top: 20px;
 	clear: both; /* This pushes the element below floating objects */
 }
 
 /* Specifications for general link text */
 a:link { /* Specification for the link as-is */
-    text-decoration: none;
-    color: #191970; /* MidnightBlue */
+    	text-decoration: none;
+    	color: #191970; /* MidnightBlue */
 }
 a:hover { /* Specification for the link when hovering over */
-    color: #0000FF; /* Blue */
+    	color: #0000FF; /* Blue */
 }
 
 /* Classes for arrangment/alignment of text and images */
 .left { /* Aligning to the left */
 	padding: 10px;
 	padding-top: 25px;
-    float: left;
+    	float: left;
 	clear: right; /* Clears the right side */
 }
 .mainleft { /* Separate for Home page because of differences in ResponsiveDesign behaviour*/
 	padding: 10px;
 	padding-top: 25px;
-    float: left;
+    	float: left;
 	clear: both;
 }
 .right { /* Aligning to the right */
-    padding: 10px;
+    	padding: 10px;
 	padding-top: 25px;
-    float: right;
+    	float: right;
 	clear: left; /* Clears the left side */
 }
 .center { /* Aligning to the center */
@@ -152,7 +156,7 @@ a:hover { /* Specification for the link when hovering over */
 	.left, .right, .center {
 	  	width: 100%; /* Can only get smaller from original size (not bigger) - mainly images */
 	  	height: auto;
-	  	align-items: center; /* Changes alignment to center objects in single smooth line */
+	  	align-items: center; /* Changes alignment to center objects in single line */
 	  	padding-top: 40px;
 	  	padding-left: 0px;
 	  	padding-right: 0px;
