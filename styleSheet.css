@@ -43,12 +43,12 @@
 /* Change colour and appearance when hovering over */
 .navigation a:hover {
   	color: #0000FF; /* Blue */
-  	text-transform: lowercase; /* Trying different elements from the reference */
+  	text-transform: lowercase; /* Makes hovering nav element all lower case */
 }
 /* Change colour and appearance of current page */
 .navigation a.active {
 	color: #000000; /* Black */
-	text-transform: uppercase; /* Trying different elements from the reference */
+	text-transform: uppercase; /* Makes current nav element all CAPITAL */
 }
 .floatRight { /* class to specify alignment to right for some navigation fields */
 	float: right !important; /* !important needed to override other settings */ 
